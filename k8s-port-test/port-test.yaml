@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: port-test
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: sleep
+    spec:
+      serviceAccountName: sleep
+      containers:
+      - name: port-test
+        image: gcr.io/jianfeih-test/port-test:0601
+        command: ["/port-test"]
+        imagePullPolicy: Always
