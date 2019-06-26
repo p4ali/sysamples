@@ -17,4 +17,7 @@ install
 curl --insecure -I https://localhost:5000
 ```
 
-TODO: pcap is done, sshkellogfile is done, applied, not transformed to http2 protocol...
+TODO
+
+- pcap is done, sshkellogfile is done, applied, not transformed to http2 protocol...
+- follow up on https://www.youtube.com/watch?v=YHOnxlQ6zec

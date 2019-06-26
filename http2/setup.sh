@@ -4,9 +4,12 @@ startserver() {
 }
 
 sendreq() {
-  for i in `seq 1 10000`
-  do
-    curl --insecure -I https://localhost:5000
-    sleep 3
-  done
+  mkdir -p $HOME/tmp
+  export SSLKEYLOGFILE="$HOME/tmp/ssl-key-log.txt"
+  curl --http2 --insecure -I https://localhost:5000
+  sleep 3
+}
+
+capture() {
+  sudo tshark -i lo -f "port 5000" -w - > ~/tmp/tshark.pcap
 }
