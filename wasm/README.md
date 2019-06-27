@@ -9,5 +9,5 @@ some concepts, module, memory, table, instance.
 
 - comparision to asm.js
 - why can be native speed?
-- different lang, many constraints and tooling needed?
-not as appealing as first thought...?
+- different lang, many constraints and tooling needed? not as appealing as first thought...?
+- how different lang compilation is possible? write a c asm inline? what happended?
