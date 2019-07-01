@@ -1,0 +1,212 @@
+[2019-07-01 19:55:03.630][7437][info][main] [source/server/server.cc:237] initializing epoch 0 (hot restart version=11.104)
+[2019-07-01 19:55:03.630][7437][info][main] [source/server/server.cc:239] statically linked extensions:
+[2019-07-01 19:55:03.630][7437][info][main] [source/server/server.cc:241]   access_loggers: envoy.file_access_log,envoy.http_grpc_access_log
+[2019-07-01 19:55:03.630][7437][info][main] [source/server/server.cc:244]   filters.http: envoy.buffer,envoy.cors,envoy.csrf,envoy.ext_authz,envoy.fault,envoy.filters.http.dynamic_forward_proxy,envoy.filters.http.grpc_http1_reverse_bridge,envoy.filters.http.header_to_metadata,envoy.filters.http.jwt_authn,envoy.filters.http.original_src,envoy.filters.http.rbac,envoy.filters.http.tap,envoy.grpc_http1_bridge,envoy.grpc_json_transcoder,envoy.grpc_web,envoy.gzip,envoy.health_check,envoy.http_dynamo_filter,envoy.ip_tagging,envoy.lua,envoy.rate_limit,envoy.router,envoy.squash
+[2019-07-01 19:55:03.630][7437][info][main] [source/server/server.cc:247]   filters.listener: envoy.listener.original_dst,envoy.listener.original_src,envoy.listener.proxy_protocol,envoy.listener.tls_inspector
+[2019-07-01 19:55:03.630][7437][info][main] [source/server/server.cc:250]   filters.network: envoy.client_ssl_auth,envoy.echo,envoy.ext_authz,envoy.filters.network.dubbo_proxy,envoy.filters.network.mysql_proxy,envoy.filters.network.rbac,envoy.filters.network.sni_cluster,envoy.filters.network.thrift_proxy,envoy.filters.network.zookeeper_proxy,envoy.http_connection_manager,envoy.mongo_proxy,envoy.ratelimit,envoy.redis_proxy,envoy.tcp_proxy
+[2019-07-01 19:55:03.630][7437][info][main] [source/server/server.cc:252]   stat_sinks: envoy.dog_statsd,envoy.metrics_service,envoy.stat_sinks.hystrix,envoy.statsd
+[2019-07-01 19:55:03.630][7437][info][main] [source/server/server.cc:254]   tracers: envoy.dynamic.ot,envoy.lightstep,envoy.tracers.datadog,envoy.tracers.opencensus,envoy.zipkin
+[2019-07-01 19:55:03.630][7437][info][main] [source/server/server.cc:257]   transport_sockets.downstream: envoy.transport_sockets.alts,envoy.transport_sockets.tap,raw_buffer,tls
+[2019-07-01 19:55:03.630][7437][info][main] [source/server/server.cc:260]   transport_sockets.upstream: envoy.transport_sockets.alts,envoy.transport_sockets.tap,raw_buffer,tls
+[2019-07-01 19:55:03.630][7437][info][main] [source/server/server.cc:266] buffer implementation: old (libevent)
+[2019-07-01 19:55:03.648][7437][info][main] [source/server/server.cc:311] admin address: 127.0.0.1:9901
+[2019-07-01 19:55:03.650][7437][debug][main] [source/server/overload_manager_impl.cc:173] No overload action is configured for envoy.overload_actions.shrink_heap.
+[2019-07-01 19:55:03.651][7437][debug][main] [source/server/overload_manager_impl.cc:173] No overload action is configured for envoy.overload_actions.stop_accepting_connections.
+[2019-07-01 19:55:03.651][7437][debug][main] [source/server/overload_manager_impl.cc:173] No overload action is configured for envoy.overload_actions.stop_accepting_connections.
+[2019-07-01 19:55:03.651][7437][debug][main] [source/server/overload_manager_impl.cc:173] No overload action is configured for envoy.overload_actions.stop_accepting_connections.
+[2019-07-01 19:55:03.651][7437][debug][main] [source/server/overload_manager_impl.cc:173] No overload action is configured for envoy.overload_actions.stop_accepting_connections.
+[2019-07-01 19:55:03.651][7437][debug][main] [source/server/overload_manager_impl.cc:173] No overload action is configured for envoy.overload_actions.stop_accepting_connections.
+[2019-07-01 19:55:03.651][7437][debug][main] [source/server/overload_manager_impl.cc:173] No overload action is configured for envoy.overload_actions.stop_accepting_connections.
+[2019-07-01 19:55:03.651][7437][debug][main] [source/server/overload_manager_impl.cc:173] No overload action is configured for envoy.overload_actions.stop_accepting_connections.
+[2019-07-01 19:55:03.651][7437][debug][main] [source/server/overload_manager_impl.cc:173] No overload action is configured for envoy.overload_actions.stop_accepting_connections.
+[2019-07-01 19:55:03.652][7437][info][main] [source/server/server.cc:422] runtime: layers:
+  - name: base
+    static_layer:
+      {}
+  - name: admin
+    admin_layer:
+      {}
+[2019-07-01 19:55:03.653][7437][warning][runtime] [source/common/runtime/runtime_impl.cc:485] Skipping unsupported runtime layer: name: "base"
+static_layer {
+}
+
+[2019-07-01 19:55:03.653][7437][info][config] [source/server/configuration_impl.cc:61] loading 0 static secret(s)
+[2019-07-01 19:55:03.653][7437][info][config] [source/server/configuration_impl.cc:67] loading 2 cluster(s)
+[2019-07-01 19:55:03.653][7442][debug][grpc] [source/common/grpc/google_async_client_impl.cc:43] completionThread running
+[2019-07-01 19:55:03.661][7437][debug][upstream] [source/common/upstream/cluster_manager_impl.cc:839] adding TLS initial cluster default_cluster
+[2019-07-01 19:55:03.661][7437][debug][upstream] [source/common/upstream/cluster_manager_impl.cc:839] adding TLS initial cluster xds_cluster
+[2019-07-01 19:55:03.661][7437][trace][upstream] [source/common/upstream/upstream_impl.cc:1001] Local locality: 
+[2019-07-01 19:55:03.661][7437][debug][upstream] [source/common/upstream/upstream_impl.cc:773] initializing secondary cluster default_cluster completed
+[2019-07-01 19:55:03.661][7437][debug][init] [source/common/init/manager_impl.cc:45] init manager Cluster default_cluster contains no targets
+[2019-07-01 19:55:03.661][7437][debug][init] [source/common/init/watcher_impl.cc:14] init manager Cluster default_cluster initialized, notifying ClusterImplBase
+[2019-07-01 19:55:03.662][7437][debug][upstream] [source/common/upstream/cluster_manager_impl.cc:999] membership update for TLS cluster default_cluster added 1 removed 0
+[2019-07-01 19:55:03.662][7437][debug][upstream] [source/common/upstream/cluster_manager_impl.cc:103] cm init: init complete: cluster=default_cluster primary=0 secondary=0
+[2019-07-01 19:55:03.662][7437][debug][upstream] [source/common/upstream/cluster_manager_impl.cc:75] cm init: adding: cluster=default_cluster primary=0 secondary=0
+[2019-07-01 19:55:03.662][7437][trace][upstream] [source/common/upstream/upstream_impl.cc:1001] Local locality: 
+[2019-07-01 19:55:03.662][7437][debug][upstream] [source/common/upstream/upstream_impl.cc:773] initializing secondary cluster xds_cluster completed
+[2019-07-01 19:55:03.662][7437][debug][init] [source/common/init/manager_impl.cc:45] init manager Cluster xds_cluster contains no targets
+[2019-07-01 19:55:03.662][7437][debug][init] [source/common/init/watcher_impl.cc:14] init manager Cluster xds_cluster initialized, notifying ClusterImplBase
+[2019-07-01 19:55:03.662][7437][debug][upstream] [source/common/upstream/cluster_manager_impl.cc:999] membership update for TLS cluster xds_cluster added 1 removed 0
+[2019-07-01 19:55:03.662][7437][debug][upstream] [source/common/upstream/cluster_manager_impl.cc:103] cm init: init complete: cluster=xds_cluster primary=0 secondary=0
+[2019-07-01 19:55:03.662][7437][debug][upstream] [source/common/upstream/cluster_manager_impl.cc:75] cm init: adding: cluster=xds_cluster primary=0 secondary=0
+[2019-07-01 19:55:03.662][7437][info][upstream] [source/common/upstream/cluster_manager_impl.cc:148] cm init: all clusters initialized
+[2019-07-01 19:55:03.662][7437][info][config] [source/server/configuration_impl.cc:71] loading 0 listener(s)
+[2019-07-01 19:55:03.662][7437][info][config] [source/server/configuration_impl.cc:96] loading tracing configuration
+[2019-07-01 19:55:03.662][7437][info][config] [source/server/configuration_impl.cc:116] loading stats sink configuration
+[2019-07-01 19:55:03.662][7437][debug][file] [source/common/filesystem/inotify/watcher_impl.cc:50] added watch for directory: '/tmp/envoy' file: 'listeners_not_warming.yaml' fd: 1
+[2019-07-01 19:55:03.662][7437][debug][init] [source/common/init/manager_impl.cc:20] added target LDS to init manager Server
+[2019-07-01 19:55:03.663][7437][info][main] [source/server/server.cc:490] all clusters initialized. initializing init manager
+[2019-07-01 19:55:03.663][7437][debug][init] [source/common/init/manager_impl.cc:49] init manager Server initializing
+[2019-07-01 19:55:03.663][7437][debug][init] [source/common/init/target_impl.cc:15] init manager Server initializing target LDS
+[2019-07-01 19:55:03.663][7437][debug][config] [source/common/config/filesystem_subscription_impl.cc:36] Filesystem config refresh for /tmp/envoy/listeners_not_warming.yaml
+[2019-07-01 19:55:03.667][7437][debug][config] [source/server/listener_manager_impl.cc:485] begin add/update listener: name=http_listener hash=5551506821223866441
+[2019-07-01 19:55:03.667][7437][debug][config] [source/server/listener_manager_impl.cc:57]   filter #0:
+[2019-07-01 19:55:03.667][7437][debug][config] [source/server/listener_manager_impl.cc:58]     name: envoy.tcp_proxy
+[2019-07-01 19:55:03.667][7437][debug][config] [source/server/listener_manager_impl.cc:61]   config: {"cluster":"default_cluster","stat_prefix":"stats"}
+[2019-07-01 19:55:03.670][7437][debug][config] [source/server/listener_manager_impl.cc:376] add active listener: name=http_listener, hash=5551506821223866441, address=0.0.0.0:9080
+[2019-07-01 19:55:03.670][7437][info][upstream] [source/server/lds_api.cc:60] lds: add/update listener 'http_listener'
+[2019-07-01 19:55:03.670][7437][debug][config] [source/server/listener_manager_impl.cc:485] begin add/update listener: name=https_listener hash=16855263350469956370
+[2019-07-01 19:55:03.672][7437][debug][init] [source/common/init/target_impl.cc:15] init manager Server initializing target SdsApi default_secret
+[2019-07-01 19:55:03.673][7437][debug][config] [source/common/config/grpc_mux_impl.cc:74] gRPC mux subscribe for type.googleapis.com/envoy.api.v2.auth.Secret
+[2019-07-01 19:55:03.673][7437][debug][config] [source/common/config/grpc_mux_impl.cc:35] No stream available to sendDiscoveryRequest for type.googleapis.com/envoy.api.v2.auth.Secret
+[2019-07-01 19:55:03.673][7437][debug][config] [bazel-out/k8-fastbuild/bin/source/common/config/_virtual_includes/grpc_stream_lib/common/config/grpc_stream.h:43] Establishing new gRPC bidi stream for rpc StreamSecrets(stream .envoy.api.v2.DiscoveryRequest) returns (stream .envoy.api.v2.DiscoveryResponse);
+
+[2019-07-01 19:55:03.673][7437][debug][router] [source/common/router/router.cc:382] [C0][S11607178736197142802] cluster 'xds_cluster' match for URL '/envoy.service.discovery.v2.SecretDiscoveryService/StreamSecrets'
+[2019-07-01 19:55:03.673][7437][debug][router] [source/common/router/router.cc:477] [C0][S11607178736197142802] router decoding headers:
+':method', 'POST'
+':path', '/envoy.service.discovery.v2.SecretDiscoveryService/StreamSecrets'
+':authority', 'xds_cluster'
+':scheme', 'http'
+'te', 'trailers'
+'content-type', 'application/grpc'
+'x-envoy-internal', 'true'
+'x-forwarded-for', '10.128.0.32'
+
+[2019-07-01 19:55:03.673][7437][debug][client] [source/common/http/codec_client.cc:26] [C0] connecting
+[2019-07-01 19:55:03.673][7437][debug][connection] [source/common/network/connection_impl.cc:702] [C0] connecting to 127.0.0.1:9903
+[2019-07-01 19:55:03.674][7437][debug][connection] [source/common/network/connection_impl.cc:711] [C0] connection in progress
+[2019-07-01 19:55:03.674][7437][debug][http2] [source/common/http/http2/codec_impl.cc:726] [C0] setting stream-level initial window size to 268435456
+[2019-07-01 19:55:03.674][7437][debug][http2] [source/common/http/http2/codec_impl.cc:748] [C0] updating connection-level initial window size to 268435456
+[2019-07-01 19:55:03.674][7437][debug][pool] [source/common/http/conn_pool_base.cc:20] queueing request due to no available connections
+[2019-07-01 19:55:03.674][7437][trace][config] [source/common/config/grpc_mux_impl.cc:60] Sending DiscoveryRequest for type.googleapis.com/envoy.api.v2.auth.Secret: node {
+  id: "node"
+  cluster: "cluster"
+  build_version: "1faaed85740a97533484db3232796aef7973677f/1.11.0-dev/Clean/DEBUG/BoringSSL"
+}
+resource_names: "default_secret"
+type_url: "type.googleapis.com/envoy.api.v2.auth.Secret"
+
+[2019-07-01 19:55:03.675][7437][trace][router] [source/common/router/router.cc:1346] [C0][S11607178736197142802] buffering 159 bytes
+[2019-07-01 19:55:03.675][7437][debug][config] [source/server/listener_manager_impl.cc:57]   filter #0:
+[2019-07-01 19:55:03.675][7437][debug][config] [source/server/listener_manager_impl.cc:58]     name: envoy.tcp_proxy
+[2019-07-01 19:55:03.675][7437][debug][config] [source/server/listener_manager_impl.cc:61]   config: {"cluster":"default_cluster","stat_prefix":"stats"}
+[2019-07-01 19:55:03.677][7437][debug][config] [source/server/listener_manager_impl.cc:376] add active listener: name=https_listener, hash=16855263350469956370, address=0.0.0.0:9443
+[2019-07-01 19:55:03.677][7437][info][upstream] [source/server/lds_api.cc:60] lds: add/update listener 'https_listener'
+[2019-07-01 19:55:03.677][7437][debug][init] [source/common/init/watcher_impl.cc:14] target LDS initialized, notifying init manager Server
+[2019-07-01 19:55:03.678][7437][debug][config] [source/common/config/filesystem_subscription_impl.cc:46] Filesystem config update accepted for /tmp/envoy/listeners_not_warming.yaml: version_info: "0"
+resources {
+  [type.googleapis.com/envoy.api.v2.Listener] {
+    name: "http_listener"
+    address {
+      socket_address {
+        address: "0.0.0.0"
+        port_value: 9080
+      }
+    }
+    filter_chains {
+      filters {
+        name: "envoy.tcp_proxy"
+        config {
+          fields {
+            key: "cluster"
+            value {
+              string_value: "default_cluster"
+            }
+          }
+          fields {
+            key: "stat_prefix"
+            value {
+              string_value: "stats"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+resources {
+  [type.googleapis.com/envoy.api.v2.Listener] {
+    name: "https_listener"
+    address {
+      socket_address {
+        address: "0.0.0.0"
+        port_value: 9443
+      }
+    }
+    filter_chains {
+      tls_context {
+        common_tls_context {
+          tls_certificate_sds_secret_configs {
+            name: "default_secret"
+            sds_config {
+              api_config_source {
+                api_type: GRPC
+                grpc_services {
+                  envoy_grpc {
+                    cluster_name: "xds_cluster"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      filters {
+        name: "envoy.tcp_proxy"
+        config {
+          fields {
+            key: "cluster"
+            value {
+              string_value: "default_cluster"
+            }
+          }
+          fields {
+            key: "stat_prefix"
+            value {
+              string_value: "stats"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+[2019-07-01 19:55:03.678][7437][info][main] [source/server/server.cc:506] starting main dispatch loop
+[2019-07-01 19:55:03.678][7437][trace][connection] [source/common/network/connection_impl.cc:456] [C0] socket event: 2
+[2019-07-01 19:55:03.678][7437][trace][connection] [source/common/network/connection_impl.cc:541] [C0] write ready
+[2019-07-01 19:55:03.678][7437][debug][connection] [source/common/network/connection_impl.cc:550] [C0] connected
+[2019-07-01 19:55:03.678][7437][debug][client] [source/common/http/codec_client.cc:64] [C0] connected
+[2019-07-01 19:55:03.678][7437][debug][pool] [source/common/http/http2/conn_pool.cc:96] [C0] creating stream
+[2019-07-01 19:55:03.678][7437][debug][router] [source/common/router/router.cc:1456] [C0][S11607178736197142802] pool ready
+[2019-07-01 19:55:03.678][7437][trace][http2] [source/common/http/http2/codec_impl.cc:559] [C0] send data: bytes=24
+[2019-07-01 19:55:03.678][7437][trace][connection] [source/common/network/connection_impl.cc:392] [C0] writing 24 bytes, end_stream false
+[2019-07-01 19:55:03.678][7437][trace][http2] [source/common/http/http2/codec_impl.cc:559] [C0] send data: bytes=21
+[2019-07-01 19:55:03.679][7437][trace][connection] [source/common/network/connection_impl.cc:392] [C0] writing 21 bytes, end_stream false
+[2019-07-01 19:55:03.679][7437][trace][http2] [source/common/http/http2/codec_impl.cc:511] [C0] sent frame type=4
+[2019-07-01 19:55:03.679][7437][trace][http2] [source/common/http/http2/codec_impl.cc:559] [C0] send data: bytes=13
+[2019-07-01 19:55:03.679][7437][trace][connection] [source/common/network/connection_impl.cc:392] [C0] writing 13 bytes, end_stream false
+[2019-07-01 19:55:03.679][7437][trace][http2] [source/common/http/http2/codec_impl.cc:511] [C0] sent frame type=8
+[2019-07-01 19:55:03.679][7437][trace][http2] [source/common/http/http2/codec_impl.cc:559] [C0] send data: bytes=133
+[2019-07-01 19:55:03.679][7437][trace][connection] [source/common/network/connection_impl.cc:392] [C0] writing 133 bytes, end_stream false
+[2019-07-01 19:55:03.679][7437][trace][http2] [source/common/http/http2/codec_impl.cc:511] [C0] sent frame type=1
+[2019-07-01 19:55:03.679][7437][trace][connection] [source/common/network/connection_impl.cc:392] [C0] writing 168 bytes, end_stream false
+[2019-07-01 19:55:03.679][7437][trace][http2] [source/common/http/http2/codec_impl.cc:511] [C0] sent frame type=0
+[2019-07-01 19:55:03.679][7437][trace][connection] [source/common/network/connection_impl.cc:541] [C0] write ready
+[2019-07-01 19:55:03.680][7437][trace][connection] [source/common/network/raw_buffer_socket.cc:66] [C0] write returns: 359
+[2019-07-01 19:55:03.680][7437][trace][connection] [source/common/network/connection_impl.cc:456] [C0] socket event: 2
+[2019-07-01 19:55:03.680][7437][trace][connection] [source/common/network/connection_impl.cc:541] [C0] write ready
+[2019-07-01 19:55:08.662][7437][debug][main] [source/server/server.cc:169] flushing stats
+[2019-07-01 19:55:08.662][7437][debug][main] [source/server/server.cc:179] Envoy is not fully initialized, skipping histogram merge and flushing stats
+[2019-07-01 19:55:13.662][7437][debug][main] [source/server/server.cc:169] flushing stats
+[2019-07-01 19:55:13.662][7437][debug][main] [source/server/server.cc:179] Envoy is not fully initialized, skipping histogram merge and flushing stats
