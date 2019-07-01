@@ -1,4 +1,4 @@
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+#DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 ENVOY_BIN="$HOME/workspace/github.com/envoyproxy/envoy/bazel-bin/source/exe/envoy-static"
 
 #copyconfig() {
@@ -15,7 +15,7 @@ fakeserver() {
 }
 
 startenvoy() {
-  ${ENVOUY_BIN} -c /tmp/envoy/config_not_warming.yaml \
+  ${ENVOY_BIN} -c config_not_warm.yaml \
     -l trace --service-node node --service-cluster cluster
 }
 

@@ -37,4 +37,4 @@ static_resources:
 
 dynamic_resources:
   lds_config:
-    path: listeners-test.yaml
+    path: ./listeners-test.yaml
