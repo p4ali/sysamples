@@ -15,7 +15,13 @@ fakeserver() {
 }
 
 startenvoy() {
+  opt="${1:-ready.yaml}"
+  cp $opt listeners-test.yaml
   ${ENVOY_BIN} -c config_not_warm.yaml \
     -l trace --service-node node --service-cluster cluster
 }
 
+check() {
+  echo "Check config dump...."
+  curl -s 127.0.0.1:9901/config_dump | jq -r ".configs[].dynamic_active_listeners[]? | .listener.address"
+}
