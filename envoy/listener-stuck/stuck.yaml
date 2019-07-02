@@ -1,4 +1,4 @@
-version_info: "0"
+version_info: "1"
 resources:
 - '@type': type.googleapis.com/envoy.api.v2.Listener
   name: http_listener
